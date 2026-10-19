@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Asistencia</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> //// Aquí se preconecta a Google Fonts para mejorar el rendimiento al cargar las fuentes
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> //// Aquí se preconecta a Google Fonts para mejorar el rendimiento al cargar las fuentes
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> //// Aquí se importa la fuente "Poppins" desde Google Fonts
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <main>
+
+            <div class="container">
+                <div class="title">Asistencia</div>
+                 <form id="form-validation" novalidate>
+                    <div class="form-group">
+                        <label for="nombre">Nombre(s)</label>
+                        <input type="text" id="nombre" placeholder="Nombre(s)" name="nombre" required>
+                        <small>Por favor ingrese Nombre</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="apellido">Apellidos</label>
+                        <input type="text" id="apellido" placeholder="Apellidos" name="apellidos" required>
+                        <small>Por favor ingrese Apellidos</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Número de teléfono</label>
+                        <input type="tel" id="telefono" placeholder="Número" name="telefono" pattern="[0-9]{7,15}" required>
+                        <small>Por favor ingrese su Número de teléfono</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" placeholder="Correo electrónico" name="correo" required>
+                        <small>Por favor ingrese su Correo electrónico</small>
+                    </div>
+
+                    <div class="button">
+                    <input type="submit" id="btnRegistrar" value="Registrar">
+                    <a href="https://local.churchofjesuschrist.org/es/units/mx/puebla/barrio-quetzalcoatl?icid=actsh%7Cmtios%7Cmobileapp%7Cmis%7Cglobal%7Cglobal" class="link-footer">Actividades del Barrio</a>
+                    <a href="https://unithistory.churchofjesuschrist.org" class="link-footer"> Historia de la unidad</a>
+                    </div>
+
+                </form>
+
+                <button type="button" id="btnDescargarExcel" class="btn-excel">Descargar Asistencias (Excel)</button>
+            </div>
+
+        </main>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
